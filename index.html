@@ -1,0 +1,35 @@
+<html>
+<head>
+<body>
+    <h1>Registration Form</h1>
+    <form action="process_form.php" method="post">
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name" required>
+        <br>
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name" required>
+        <br>
+        <label for="age">Age:</label>
+        <select id="age" name="age">
+            <option value="18-24">18-24</option>
+            <option value="25-34">25-34</option>
+            <option value="35-44">35-44</option>
+            <option value="45-54">45-54</option>
+            <option value="55+">55+</option>
+        </select>
+        <br>
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="nonbinary">Non-Binary</option>
+            <option value="other">Other</option>
+        </select>
+        <select id="combo_box"></select>
+        <br>
+        <button type="button" id="submitBtn">Submit</button> <!-- Replaced type="submit" with type="button" and added id="submitBtn" -->
+    </form>
+  <p id="output"></p>
+</body>
+</head>
+</html>
